@@ -1,4 +1,20 @@
+:root{
+
+}
+*{
+  /*Title font*/
+  /*Main text font */
+
+}
+/*nav bar grid formating*/
 .list{
   display: grid;
-  grid-auto-flow: column; 
+  grid-auto-flow: column;
+}
+h1{
+  font-family: 'Metal Mania', cursive;
+
+}
+p{
+  font-family: 'Cinzel Decorative', cursive;
 }
