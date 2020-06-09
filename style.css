@@ -1,9 +1,12 @@
 :root {
   --mainTextColour: Black;
-  --specialtextColour: red;
-  --primaryBackgroundColour: black;
-  --secoundryBackgroundColour: grey;
+  --maintextbackground: #636363;
+  --specialtextColour: #d10202;
+  --secoundaryspecialcolour: #630000;
+  --primaryBackgroundColour: #0d0d0d;
+  --secoundryBackgroundColour: #2e2e2e;
 }
+
 * {
   font-family: 'Cinzel Decorative', cursive;
   margin: 0px;
@@ -16,18 +19,25 @@
 }
 h1 {
   background-color: var(--primaryBackgroundColour);
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 h1 a {
   text-decoration: none;
   color: var(--specialtextColour);
   font-family: 'Metal Mania', cursive;
   font-size: 75px;
-  text-shadow: 5px 5px darkred;
-
+  text-shadow: 4px 4px var(--secoundaryspecialcolour);
 }
-
+input{
+  
+}
 p {
   font-size: 20px;
+  color: var(--mainTextColour);
+  background-color: var(--maintextbackground);
+  padding: 20px;
 }
 
 a {
@@ -51,7 +61,7 @@ li{
 }
 li a {
   text-decoration: none;
-  color: var(--mainTextColour);
+  color: var(--specialtextColour);
   font-size: 23px;
 
 }
