@@ -1,10 +1,15 @@
 :root{
-
+  --mainTextColour: Black;
+  --specialtextColour: red;
+  --PrimaryColourLight: #0844a4;
+  --PrimaryColourDark: #021f54;
+  --secondryColourLight: #629c44;
+  --secondryColourDark: #033076;
 }
 *{
   /*Title font*/
   /*Main text font */
-
+  font-family: 'Cinzel Decorative', cursive;
 }
 /*nav bar grid formating*/
 .list{
@@ -12,9 +17,35 @@
   grid-auto-flow: column;
 }
 h1{
+
+}
+h1 a{
+  text-decoration: none;
+  color: var(--specialtextColour);
   font-family: 'Metal Mania', cursive;
+  font-size: 75px;
 
 }
 p{
-  font-family: 'Cinzel Decorative', cursive;
+}
+a {
+  text-decoration: none;
+}
+
+nav{
+
+}
+ul {
+  list-style-type: none;
+
+}
+li a {
+  text-decoration: none;
+  color: var(--mainTextColour);
+  font-size: 23px;
+
+}
+li a:hover{
+  text-shadow: 5px 5px red;
+
 }
