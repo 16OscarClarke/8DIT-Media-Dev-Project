@@ -17,11 +17,19 @@
   display: grid;
   grid-auto-flow: column;
 }
+.headbar{
+  background-color: var(--primaryBackgroundColour);
+  color: var(--specialtextColour);
+  padding-left: 1.5%;
+  padding-bottom: 1.5%;
+  padding-top: 1%;
+}
+input{
+  align-self: right;
+  float: right;
+}
 h1 {
   background-color: var(--primaryBackgroundColour);
-  padding-left: 25px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 h1 a {
   text-decoration: none;
@@ -30,20 +38,24 @@ h1 a {
   font-size: 75px;
   text-shadow: 4px 4px var(--secoundaryspecialcolour);
 }
-input{
-  
+h1 a:hover{
+  color: #d4f2ff;
+}
+
+.heading {
+  display: grid;
+  grid-auto-flow: column;
 }
 p {
   font-size: 20px;
   color: var(--mainTextColour);
   background-color: var(--maintextbackground);
-  padding: 20px;
+  padding: 2%;
 }
 
 a {
   text-decoration: none;
 }
-
 nav{
   background-color: var(--secoundryBackgroundColour);
 
@@ -59,10 +71,14 @@ li{
   padding-right: 10px ;
 
 }
+
 li a {
   text-decoration: none;
   color: var(--specialtextColour);
   font-size: 23px;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
 
 }
 li a:hover{
