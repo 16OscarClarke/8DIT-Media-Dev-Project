@@ -80,9 +80,6 @@ li a {
 
 }
 li a:hover{
-  color:red;
+  color:Black;
 
-}
-li :hover{
-  background-color: black;
 }
