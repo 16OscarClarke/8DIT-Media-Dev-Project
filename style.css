@@ -82,5 +82,11 @@ li a {
 }
 li a:hover{
   color:Black;
-
+}
+.StringGallery img{
+  width: 25%;
+}
+.StringGallery{
+  display: grid;
+  grid-auto-flow:
 }
