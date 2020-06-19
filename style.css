@@ -84,10 +84,12 @@ li a:hover{
   color:Black;
 }
 .StringGallery img{
-  padding-left: 10%;
-  width: 25%;
+
+  width: 60%;
 }
 .StringGallery{
+  align-self: center;
   display: grid;
-  grid-auto-flow:
+  grid-template-columns: repeat(3 ,1fr);
+  grid-template-rows: auto;
 }
