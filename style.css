@@ -84,12 +84,22 @@ li a:hover{
   color:Black;
 }
 .StringGallery img{
-
-  width: 60%;
+  width: 70%;
 }
 .StringGallery{
+  background-color: var(--maintextbackground);
   align-self: center;
   display: grid;
   grid-template-columns: repeat(3 ,1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto-fit;
+  align-items: center;
+}
+
+.StringSeperation {
+  background-color: var(--primaryBackgroundColour);
+  color: var(--specialtextColour);
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
