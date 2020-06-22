@@ -15,7 +15,7 @@
 
 .list {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(8,1fr);
 }
 .headbar{
   background-color: var(--primaryBackgroundColour);
@@ -85,14 +85,17 @@ li a:hover{
 }
 .StringGallery img{
   width: 70%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 .StringGallery{
   background-color: var(--maintextbackground);
   align-self: center;
   display: grid;
   grid-template-columns: repeat(3 ,1fr);
-  grid-template-rows: auto-fit;
-  align-items: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+
 }
 
 .StringSeperation {
@@ -102,4 +105,25 @@ li a:hover{
   align-items: center;
   align-content: center;
   text-align: center;
+  padding-top:1%;
+  padding-bottom:1% ;
+}
+@media only screen and (max-width: 750px){
+  .list {
+    grid-template-columns: ;
+    grid-template-rows: 2 ;
+
+  }
+}
+@media only screen and (max-width:900px) {
+  .StringGallery {
+    grid-template-columns: repeat(2 ,1fr);
+
+  }
+}
+@media only screen and (max-width: 650px) {
+  .StringGallery {
+    grid-template-columns: repeat(1 ,1fr);
+
+  }
 }
