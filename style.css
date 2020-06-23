@@ -6,15 +6,18 @@
   --primaryBackgroundColour: #0d0d0d;
   --secoundryBackgroundColour: #2e2e2e;
 }
+
 * {
   font-family: 'Cinzel', serif;
   margin: 0px;
   padding: 0px;
 }
+
 .list {
   display: grid;
   grid-auto-flow: column;
 }
+
 .headbar{
   background-color: var(--primaryBackgroundColour);
   color: var(--specialtextColour);
@@ -22,9 +25,11 @@
   padding-bottom: 1.5%;
   padding-top: 1%;
 }
+
 h1 {
   background-color: var(--primaryBackgroundColour);
 }
+
 h1 a {
   text-decoration: none;
   color: var(--specialtextColour);
@@ -32,31 +37,38 @@ h1 a {
   font-size: 75px;
   text-shadow: 4px 4px var(--secoundaryspecialcolour);
 }
+
 h1 a:hover{
   color: #d4f2ff;
 }
+
 .heading {
   display: grid;
   grid-auto-flow: column;
 }
+
 p {
   font-size: 20px;
   color: var(--mainTextColour);
   background-color: var(--maintextbackground);
   padding: 2%;
 }
+
 a {
   text-decoration: none;
 }
+
 nav{
   background-color: var(--secoundryBackgroundColour);
   padding-left: 1.5%;
 
 }
+
 ul {
   list-style-type: none;
 
 }
+
 li{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -64,6 +76,7 @@ li{
   padding-right: 10px ;
 
 }
+
 li a {
   text-decoration: none;
   color: var(--specialtextColour);
@@ -73,18 +86,22 @@ li a {
   text-align: center;
   font-family: 'Cinzel Decorative', cursive;
 }
-li a:hover{
+
+ul li a:hover{
   color:Black;
 }
+
 .StringGallery img{
   width: 70%;
   padding-top: 4%;
   padding-bottom: 4%;
 }
+
 .StringGallery a img {
   margin:auto;
   display:block;
 }
+
 .StringGallery{
   background-color: var(--maintextbackground);
   align-self: center;
@@ -94,6 +111,7 @@ li a:hover{
   padding-bottom: 3%;
 
 }
+
 .StringSeperation {
   background-color: var(--primaryBackgroundColour);
   color: var(--specialtextColour);
@@ -106,6 +124,7 @@ li a:hover{
 }
 
 /*Media Querys*/
+/*Media nav bar responseiveness*/
 @media only screen and (max-width: 800px){
   .list {
     grid-template-columns: repeat(1,1fr);
@@ -118,12 +137,15 @@ li a:hover{
     display: block;
   }
 }
+
+/*StringGallery responseiveness*/
 @media only screen and (max-width:900px) {
   .StringGallery {
     grid-template-columns: repeat(2 ,1fr);
 
   }
 }
+
 @media only screen and (max-width: 650px) {
   .StringGallery {
     grid-template-columns: repeat(1 ,1fr);
