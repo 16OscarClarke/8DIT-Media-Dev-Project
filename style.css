@@ -6,16 +6,14 @@
   --primaryBackgroundColour: #0d0d0d;
   --secoundryBackgroundColour: #2e2e2e;
 }
-
 * {
   font-family: 'Cinzel', serif;
   margin: 0px;
   padding: 0px;
 }
-
 .list {
   display: grid;
-  grid-template-columns: repeat(8,1fr);
+  grid-auto-flow: column;
 }
 .headbar{
   background-color: var(--primaryBackgroundColour);
@@ -74,7 +72,6 @@ li a {
   padding-right: 2%;
   text-align: center;
   font-family: 'Cinzel Decorative', cursive;
-
 }
 li a:hover{
   color:Black;
@@ -83,15 +80,11 @@ li a:hover{
   width: 70%;
   padding-top: 4%;
   padding-bottom: 4%;
-  align-content: center;
-  align-items: center;
-  align-self: center;
 }
 .StringGallery a img {
   margin:auto;
   display:block;
 }
-
 .StringGallery{
   background-color: var(--maintextbackground);
   align-self: center;
@@ -113,15 +106,18 @@ li a:hover{
 }
 
 /*Media Querys*/
-/*
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 800px){
   .list {
-    grid-template-columns: ;
-    grid-template-rows: repeat(2,1fr) ;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,1fr) ;
+
 
   }
+  .list li a{
+    margin: auto;
+    display: block;
+  }
 }
-*/
 @media only screen and (max-width:900px) {
   .StringGallery {
     grid-template-columns: repeat(2 ,1fr);
