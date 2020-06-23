@@ -125,7 +125,7 @@ ul li a:hover{
 
 /*Media Querys*/
 /*Media nav bar responseiveness*/
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 850px){
   .list {
     grid-template-columns: repeat(1,1fr);
     grid-template-rows: repeat(7,1fr) ;
