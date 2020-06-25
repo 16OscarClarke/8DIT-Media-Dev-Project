@@ -39,7 +39,7 @@ h1 a {
 }
 
 h1 a:hover{
-  color: #d4f2ff;
+  color: white;
 }
 
 .heading {
@@ -133,7 +133,10 @@ ul li a:hover{
   padding-top:1%;
   padding-bottom:1% ;
 }
+.StringNav p{
+  padding-left: 5%
 
+}
 .StringNav p:hover{
   color: var(--specialtextColour);
 }
@@ -165,5 +168,10 @@ ul li a:hover{
   .StringGallery {
     grid-template-columns: repeat(1 ,1fr);
 
+  }
+  .StringGallery img{
+    width: 68%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
 }
