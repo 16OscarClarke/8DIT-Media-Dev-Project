@@ -112,7 +112,16 @@ ul li a:hover{
   padding-top: 3%;
   padding-bottom: 3%;
 
+
+
+
 }
+
+/*.Guitar6Strings{
+  background-image: url(images/6GuitarBackground);
+  height: 100vh;
+  background-position: center;
+}*/
 
 .StringSeperation {
   background-color: var(--primaryBackgroundColour);
