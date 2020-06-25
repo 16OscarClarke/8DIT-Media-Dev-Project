@@ -51,9 +51,11 @@ p {
   font-size: 20px;
   color: var(--mainTextColour);
   background-color: var(--maintextbackground);
-  padding: 2%;
 }
-
+.bodyText{
+  padding-top: 2%;
+  padding-left: 2%;
+}
 a {
   text-decoration: none;
 }
@@ -121,6 +123,10 @@ ul li a:hover{
   text-align: center;
   padding-top:1%;
   padding-bottom:1% ;
+}
+
+.StringNav p:hover{
+  color: var(--specialtextColour);
 }
 
 /*Media Querys*/
