@@ -52,10 +52,12 @@ p {
   color: var(--mainTextColour);
   background-color: var(--maintextbackground);
 }
+
 .bodyText{
   padding-top: 2%;
   padding-left: 2%;
 }
+
 a {
   text-decoration: none;
 }
@@ -98,11 +100,13 @@ ul li a:hover{
   padding-top: 4%;
   padding-bottom: 4%;
 }
+
 .StringGallery img:hover{
   padding-bottom: 25%;
-  background-color: BLACK;
+  background-color: Black;
   width: 75%;
 }
+
 .StringGallery a img {
   margin:auto;
   display:block;
@@ -137,10 +141,12 @@ ul li a:hover{
   padding-top:1%;
   padding-bottom:1% ;
 }
+
 .StringNav p{
   padding-left: 5%
 
 }
+
 .StringNav p:hover{
   color: var(--specialtextColour);
 }
@@ -158,6 +164,61 @@ ul li a:hover{
     margin: auto;
     display: block;
   }
+}
+
+@media only screen and (max-width: 650px) {
+
+  .menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    color: red ;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    color: red;
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: red;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px;
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
 }
 
 /*StringGallery responseiveness*/
