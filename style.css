@@ -176,6 +176,7 @@ ul li a:hover{
     width: 80px;
     height: 80px;
     color: red ;
+    background-color: var(--secoundryBackgroundColour);
     cursor: pointer;
     transition: all .5s ease-in-out;
     /* border: 3px solid #fff; */

@@ -1,3 +1,11 @@
+:root {
+  --mainTextColour: Black;
+  --maintextbackground: #636363;
+  --specialtextColour: #d10202;
+  --secoundaryspecialcolour: #630000;
+  --primaryBackgroundColour: #0d0d0d;
+  --secoundryBackgroundColour: #2e2e2e;
+}
 
 .menu-btn {
   position: relative;
@@ -7,6 +15,7 @@
   width: 80px;
   height: 80px;
   color: red ;
+  background-color: var(--maintextbackground);
   cursor: pointer;
   transition: all .5s ease-in-out;
   /* border: 3px solid #fff; */
