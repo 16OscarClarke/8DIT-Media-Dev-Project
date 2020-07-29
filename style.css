@@ -1,5 +1,5 @@
 :root {
-  --mainTextColour: Black;
+  --mainTextColour: #000000;
   --maintextbackground: #636363;
   --specialtextColour: #d10202;
   --secoundaryspecialcolour: #630000;
@@ -11,6 +11,9 @@
   font-family: 'Cinzel', serif;
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
+
+  
 }
 
 .list {
@@ -99,12 +102,14 @@ ul li a:hover{
   width: 70%;
   padding-top: 4%;
   padding-bottom: 4%;
+  transition: .5s;
 }
 
 .StringGallery img:hover{
   padding-bottom: 25%;
-  background-color: Black;
+  background-color: var(--secoundryBackgroundColour);
   width: 75%;
+  transition: .5s; 
 }
 
 .StringGallery a img {
@@ -119,10 +124,40 @@ ul li a:hover{
   grid-template-columns: repeat(3 ,1fr);
   padding-top: 3%;
   padding-bottom: 3%;
+}
 
+.stringNav {
+  background-color: var(--maintextbackground);
+  font-size: 20px;
+  color: var(--mainTextColour);
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-left: 4%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 
+}
 
+.StringNav a{
+  color: var(--mainTextColour);
+  padding-top: 2%;
+}
 
+.internalAnchor {
+  padding-top: 2%;
+  color: var(--mainTextColour);
+}
+
+.internalAnchor:hover{
+  color: var(--specialtextColour);
+}
+
+.internalAnchor a{
+  padding-top: 2%;
+  padding-left: 2%;
+  background-color: var(--maintextbackground);
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /*.Guitar6Strings{
