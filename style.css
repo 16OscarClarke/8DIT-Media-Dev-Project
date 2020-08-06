@@ -106,12 +106,25 @@ ul li a:hover{
 }
 
 .StringGallery img:hover{
-  padding-bottom: 25%;
   background-color: var(--secoundryBackgroundColour);
-  width: 75%;
+  width: 85%;
   transition: .5s; 
 }
-
+.stringPack p{
+  display: none;
+  margin-left: 4%;
+  align-self: center;
+  transition: .5s;
+}
+.stringPack:hover p{
+  display: inline-block;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: repeat(3 ,1fr);
+  color: var(--specialtextColour);
+  background-color: var(--secoundryBackgroundColour);
+  transition: .5s;
+}
 .StringGallery a img {
   margin:auto;
   display:block;
@@ -203,6 +216,10 @@ ul li a:hover{
 
 @media only screen and (max-width: 650px) {
 
+  nav{
+    display:none;
+  }
+
   .menu-btn {
     position: relative;
     display: flex;
@@ -263,6 +280,7 @@ ul li a:hover{
     grid-template-columns: repeat(2 ,1fr);
 
   }
+  
 }
 
 @media only screen and (max-width: 650px) {
@@ -274,5 +292,8 @@ ul li a:hover{
     width: 68%;
     padding-top: 2%;
     padding-bottom: 2%;
+  }
+  nav{
+    display:none;
   }
 }
