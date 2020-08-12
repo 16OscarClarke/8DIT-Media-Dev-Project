@@ -1,6 +1,6 @@
 :root {
   --mainTextColour: #000000;
-  --maintextbackground: #636363;
+  --maintextbackground: #949494;
   --specialtextColour: #d10202;
   --secoundaryspecialcolour: #630000;
   --primaryBackgroundColour: #0d0d0d;
@@ -110,21 +110,7 @@ ul li a:hover{
   width: 85%;
   transition: .5s; 
 }
-.stringPack p{
-  display: none;
-  margin-left: 4%;
-  align-self: center;
-  transition: .5s;
-}
-.stringPack:hover p{
-  display: inline-block;
-  margin-left: 10%;
-  display: grid;
-  grid-template-columns: repeat(3 ,1fr);
-  color: var(--specialtextColour);
-  background-color: var(--secoundryBackgroundColour);
-  transition: .5s;
-}
+
 .StringGallery a img {
   margin:auto;
   display:block;
@@ -179,7 +165,7 @@ ul li a:hover{
   background-position: center;
 }*/
 
-.StringSeperation {
+.GallerySeperation {
   background-color: var(--primaryBackgroundColour);
   color: var(--specialtextColour);
   align-self: center;
@@ -280,6 +266,11 @@ ul li a:hover{
     grid-template-columns: repeat(2 ,1fr);
 
   }
+  .StringGallery img:hover{
+    background-color: var(--secoundryBackgroundColour);
+    width: 80%;
+    transition: .5s; 
+  }
   
 }
 
@@ -295,5 +286,11 @@ ul li a:hover{
   }
   nav{
     display:none;
+  }
+
+  .StringGallery img:hover{
+    background-color: var(--secoundryBackgroundColour);
+    width: 75%;
+    transition: .5s; 
   }
 }
