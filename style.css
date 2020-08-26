@@ -58,9 +58,18 @@ p {
 
 .bodyText{
   padding-top: 2%;
-  padding-left: 2%;
-}
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
 
+}
+.stringNav a{
+  padding-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  
+}
 a {
   text-decoration: none;
 }
@@ -125,6 +134,7 @@ ul li a:hover{
   padding-bottom: 3%;
 }
 
+
 .stringNav {
   background-color: var(--maintextbackground);
   font-size: 20px;
@@ -132,14 +142,10 @@ ul li a:hover{
   display: grid;
   grid-template-columns: 1fr;
   padding-left: 4%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-
 }
 
 .StringNav a{
   color: var(--mainTextColour);
-  padding-top: 2%;
 }
 
 .internalAnchor {
@@ -152,7 +158,6 @@ ul li a:hover{
 }
 
 .internalAnchor a{
-  padding-top: 2%;
   padding-left: 2%;
   background-color: var(--maintextbackground);
   display: grid;
